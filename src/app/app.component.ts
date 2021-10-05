@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AdAppFinal';
+  Tflag:boolean=false;
+  Eflag:boolean=false;
+
+  changeTflag(){
+    this.Tflag=!this.Tflag;
+    console.log(this.Tflag);
+    
+  }
+  
+
 }

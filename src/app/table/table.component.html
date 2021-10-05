@@ -1,0 +1,30 @@
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Title</th>
+            <th scope="col">Catagory</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ad of allAdData ">
+            <td>{{ad.id}}</td>
+            <td>{{ad.Name}}</td>
+            <td>{{ad.Title}}</td>
+            <td>{{ad.Catagory}}</td>
+            <td>{{ad.Description}}</td>
+            <td>
+                <button class="btn btn-info" (click)="changeEflag(ad)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button> &nbsp;
+                <button class="btn btn-danger" (click)="deleteAd(ad)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div>
+
+    <app-edit-adv *ngIf="Eflag" [data]="data"> </app-edit-adv>
+</div>

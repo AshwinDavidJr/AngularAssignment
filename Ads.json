@@ -1,0 +1,32 @@
+{
+  "Ads": [
+    {
+      "id": 1,
+      "Name": "ttest1",
+      "Title": "test1",
+      "Catagory": "Furniture",
+      "Description": "desc1"
+    },
+    {
+      "id": 2,
+      "Name": "ttest1",
+      "Title": "title1",
+      "Catagory": "Furniture",
+      "Description": "desc1"
+    },
+    {
+      "id": 3,
+      "Name": "Updatedname",
+      "Title": "khvfhk,",
+      "Catagory": "hardware",
+      "Description": "jbun;"
+    },
+    {
+      "id": 4,
+      "Name": "",
+      "Title": "title4",
+      "Catagory": "Furniture",
+      "Description": "desc4"
+    }
+  ]
+}

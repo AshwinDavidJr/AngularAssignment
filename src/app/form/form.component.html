@@ -1,0 +1,38 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title-centre" id="exampleModalLabel">Advertisement Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Name</label>
+                    <input type="email" formControlName="Name" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputTitle" class="form-label">Title</label>
+                    <input type="text" formControlName="Title" class="form-control" id="exampleInputTitle">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputCatagory" class="form-label">Catagory</label>
+                    <select formControlName="Catagory" id="exampleInputCatagory">
+                            <option *ngFor="let cat of cats">{{cat}}</option>
+                        </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Description</label>
+                    <input type="text" formControlName="Description" class="form-control" id="exampleInputPassword1">
+                </div>
+
+
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" [disabled]="Addflag" class="btn btn-primary" (click)="addAd()">Add Advertisement</button>
+
+        </div>
+    </div>
+</div>
